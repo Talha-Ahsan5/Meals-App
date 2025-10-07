@@ -14,6 +14,11 @@ class _SomethingState extends State<Something> {
       appBar: AppBar(
         title: const Text('My app'),
       ),
+      body: const Column(
+        children: [
+            Text('Hey Bro!! I am in'),
+        ],
+      ),
     );
   }
 }
