@@ -11,9 +11,20 @@ class _SomethingState extends State<Something> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('My app'),
-      ),
+        appBar: AppBar(
+            backgroundColor: Colors.amber,
+            actions: const [
+                Column(
+                    children: [
+                        Row(
+                            children: [
+                                Text('Hey Row'),
+                            ],
+                        )
+                    ],
+                )
+            ],
+        ),
     );
   }
 }
