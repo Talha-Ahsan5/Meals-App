@@ -1,0 +1,2 @@
+Practise git ammend command for DevOps
+git commit --amen -m
