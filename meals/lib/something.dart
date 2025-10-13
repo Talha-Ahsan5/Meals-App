@@ -22,11 +22,12 @@ class _SomethingState extends State<Something> {
             Text("fourth change"),
             Text("Fifth change"),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text("Code changes"),
                 Text("Git diff changes"),
               ],
-            )
+            ),
         ],
       ),
     );
