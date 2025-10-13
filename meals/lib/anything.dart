@@ -23,6 +23,7 @@ class _AnythingState extends State<Anything> {
           Row(
             children: [
               Text("Here it is the row!!"),
+              Text("Check specific file ccommit without staging area")
             ],
           )
         ],
