@@ -29,6 +29,11 @@ class _SomethingState extends State<Something> {
                 Text("Git commit without add . staging area"),
               ],
             ),
+            Column(
+              children: [
+                Text("Nicely done!!"),
+              ],
+            )
         ],
       ),
     );
