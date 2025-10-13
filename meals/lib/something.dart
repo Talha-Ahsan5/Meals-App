@@ -26,6 +26,7 @@ class _SomethingState extends State<Something> {
               children: [
                 Text("Code changes"),
                 Text("Git diff changes"),
+                Text("Git commit without add . staging area"),
               ],
             ),
         ],
