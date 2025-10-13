@@ -21,6 +21,12 @@ class _SomethingState extends State<Something> {
             Text("This is third changes"),
             Text("fourth change"),
             Text("Fifth change"),
+            Row(
+              children: [
+                Text("Code changes"),
+                Text("Git diff changes"),
+              ],
+            )
         ],
       ),
     );
