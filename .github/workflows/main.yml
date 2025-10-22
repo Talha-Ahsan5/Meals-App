@@ -1,0 +1,33 @@
+name: Make A Build For Meals Android App
+
+on: 
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: CheckOut Code
+        uses: actions/checkout@v3
+
+      - name: SetUp Flutter
+        uses: subosito/flutter-action@V2
+        with: 
+          channel: stable
+          cache: true
+
+      - name: Check Flutter & Dart version
+        run: 
+          flutter --version
+          dart --version
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build APK
+        run: flutter build apk --release
+
+         
