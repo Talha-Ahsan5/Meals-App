@@ -25,9 +25,11 @@ jobs:
           dart --version
 
       - name: Install dependencies
-        run: flutter pub get
+        run: cd meals
+             flutter pub get
 
       - name: Build APK
-        run: flutter build apk --release
+        run: cd meals
+             flutter build apk --release
 
          
